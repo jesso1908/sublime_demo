@@ -13,9 +13,3 @@ for i in range(16):
 	print("#",end="")
 print("\n\n")
 
-print("Jesso\n",23)
-
-for i in range(5):
-	print("&*")
-	for i in range(10):
-		print("%$")
