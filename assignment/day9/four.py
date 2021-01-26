@@ -10,13 +10,13 @@ for i in range(len(close_prices)-1):
 		print("bullish engulfing")
 	elif (open_prices[i]<close_prices[i]) and (open_prices[i+1]>=close_prices[i]) and (close_prices[i+1]<open_prices[i]):
 		print("bearish engulfing")
-	elif(high_price[1]<high_price[0]) and (low_prices[1]>low_prices[0]):
+	elif(high_price[i+1]<high_price[i]) and (low_prices[i+1]>low_prices[i]):
 		print("inside bar")
 	if(open_prices[i]>close_prices[i]) and(open_prices[i+1]>close_prices[i]) and(close_prices[i+1]<open_prices[i]):
 		print('bullish harami')
 	if(close_prices[i]>open_prices[i]) and (open_prices[i+1]<close_prices[i]) and (close_prices[i+1]>open_prices[i]):
 		print("bearish harami")
-	if(close_prices[0]>open_prices[0]) and (open_prices[i+1]>high_price[i]) and (close_prices[i]<=avg_previousday[i]):
+	if(close_prices[i]>open_prices[i]) and (open_prices[i+1]>high_price[i]) and (close_prices[i]<=avg_previousday[i]):
 		print("dark cloud")
 	if(close_prices[i]<open_prices[i]) and(open_prices[i+1]<low_prices[i] and close_prices[i+1]>=avg_previousday[i]):
 		print("Rising star")
