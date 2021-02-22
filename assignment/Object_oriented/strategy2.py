@@ -1,0 +1,16 @@
+import pandas as pd 
+import talib as ta
+df=pd.read_csv("E:/sublime/assignment/day24/Nifty-1D.csv")
+df1=pd.read_csv("C:/Users/jesso/Desktop/TCS_1.csv")
+print(df1["Date"].dtype)
+print(df["YYYYMMDD"].dtype)
+print(df)
+# print(df1)
+# close_price=df["Close"].to_numpy()
+# high_price=df["High"].to_numpy()
+# low_price=df["Low"].to_numpy()
+# print(len(close_price))
+# print(len(high_price))
+# print(len(low_price))
+# atr=ta.ATR(high_price,low_price,close_price,timeperiod=30)
+# print(atr)

@@ -1,0 +1,11 @@
+import numpy as np
+arr=np.array([1,2,3,4,5])
+print(arr)
+print(arr.ndim)
+print(type(arr))
+print(arr[0]+arr[1])
+arr_2=np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print(arr_2[0,0])
+# arr_1=np.array([[[1,2,3,4,5],[5,4,3,2,1]],[[11,12,13,14,15],[16,17,18,19,20]]],ndmin=5)
+# print(arr_1)
+# print(arr_1.ndim)
